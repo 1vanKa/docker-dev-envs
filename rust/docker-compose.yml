@@ -1,0 +1,10 @@
+services:
+  rust-dev:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.dev
+    container_name: rust-dev
+    volumes:
+    - .:/workspace/
+    command: bash
+    tty: true

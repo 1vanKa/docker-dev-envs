@@ -1,0 +1,9 @@
+FROM rust:latest
+
+WORKDIR /workspace/
+
+RUN apt update
+RUN apt install lldb
+RUN rustup component add rustfmt
+
+# docker run -dti --mount type=bind,source=$(pwd),target=/workspace --name rust-container rust-image
