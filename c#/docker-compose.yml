@@ -1,9 +1,9 @@
 services:
-  rust-dev:
+  csharp-dev:
     build:
       context: .
       dockerfile: ./Dockerfile.dev
-    container_name: rust-dev
+    container_name: csharp-dev
     volumes:
     - ../..:/workspace/
     command: bash
