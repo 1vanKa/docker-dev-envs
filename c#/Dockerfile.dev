@@ -1,7 +1,0 @@
-FROM mcr.microsoft.com/dotnet/sdk:latest
-
-WORKDIR /workspace/
-
-RUN dotnet dev-certs https --trust
-
-# docker run -dti --mount type=bind,source=$(pwd),target=/workspace --name dotnet-container dotnet-image
