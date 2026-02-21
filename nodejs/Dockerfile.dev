@@ -1,0 +1,8 @@
+FROM node:current
+
+WORKDIR /workspace/
+
+RUN apt update
+
+# docker build -f Dockerfile.dev  -t nodejs-dev-image .
+# docker run -dti --mount type=bind,source=$(pwd)/../..,target=/workspace --name nodejs-dev-container nodejs-dev-image

@@ -1,0 +1,10 @@
+services:
+  nodejs-dev:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.dev
+    container_name: nodejs-dev
+    volumes:
+    - ../..:/workspace/
+    command: bash
+    tty: true
